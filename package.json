@@ -1,16 +1,16 @@
 {
-  "name": "react-dropzone-s3-uploader",
-  "version": "0.10.0",
-  "description": "Drag and drop s3 file uploader via react-dropzone + react-s3-uploader",
+  "name": "restuta-react-dropzone-s3-uploader",
+  "version": "0.20.2",
+  "description": "Fork of Drag and drop s3 file uploader via react-dropzone + react-s3-uploader",
   "main": "lib/index.js",
   "author": {
-    "name": "Gwilym Humphreys",
-    "url": "https://github.com/gwilymhumphreys"
+    "name": "Anton Vynogradenko",
+    "url": "https://github.com/Restuta"
   },
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/founderlab/react-dropzone-s3-uploader"
+    "url": "https://github.com/Restuta/react-dropzone-s3-uploader"
   },
   "scripts": {
     "prepublish": "rm -rf ./lib && babel ./src --ignore '/node_modules/' --out-dir ./lib",
@@ -19,19 +19,23 @@
     "test": "eval $(cat test/.env) mocha test/**/*.tests.js"
   },
   "dependencies": {
-    "react-dropzone": "^3.7.3",
+    "react-dropzone": "^3.9.1",
     "react-s3-uploader": "^4.0.0"
   },
   "peerDependencies": {
     "react": "^0.14.0 || ^15.4.0"
   },
   "devDependencies": {
-    "babel": "^5.6.14",
-    "babel-core": "^5.6.15",
-    "babel-eslint": "^4.1.3",
-    "eslint": "^1.5.1",
+    "babel-cli": "^6.22.1",
+    "babel-core": "^6.22.1",
+    "babel-preset-es2015": "^6.16.0",
+    "babel-preset-react": "^6.16.0",
+    "babel-preset-stage-2": "^6.17.0",
+    "babel-plugin-add-module-exports": "^0.2.1",
+    "babel-eslint": "^6.0.4",
+    "eslint": "~2.11.1",
     "eslint-config-founderlab": "^0.1.0",
-    "eslint-plugin-react": "^3.4.2",
+    "eslint-plugin-react": "^5.1.1",
     "expect": "^1.12.2"
   }
 }
