@@ -59,7 +59,9 @@ export default class DropzoneS3Uploader extends React.Component {
     style: {
       width: 200,
       height: 200,
-      border: 'dashed 2px #999',
+      borderStyle: 'dashed',
+      borderWidth: 2,
+      borderColor: '#999',
       borderRadius: 5,
       position: 'relative',
       cursor: 'pointer',
